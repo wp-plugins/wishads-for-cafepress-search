@@ -1,7 +1,7 @@
 === Wishads for CafePress Search ===
 Contributors: wishads
 Donate link: http://www.wishads.com
-Tags: cafepress,affiliate,shirts,pod,print-on-demand
+Tags: plugin,post,page,cafepress,affiliate,shirts,pod,print-on-demand
 Requires at least: 2.7
 Tested up to: 2.7.1
 Stable tag: 1.0
