@@ -29,12 +29,11 @@ Features:
 
 == Installation ==
 
-1. Create a "cafepress_grid" subdirectory in your `/wp-content/plugins/` directory
-2. Upload all files and subdirectories to the `/wp-content/plugins/cafepress_grid` directory
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Set up the plugin with your Commission Junction and CafePress information in the `Settings` area
-5. Use the shortcode or the input form to create your product display.
-6. A help file is included with more information about affiliating CafePress
+1. Unzip and upload all files and subdirectories to the `/wp-content/plugins/wishads-for-cafepress-search` directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Set up the plugin with your Commission Junction and CafePress information in the `Settings` area
+4. Use the shortcode or the input form to create your product display.
+5. A help file is included with more information about affiliating CafePress
 
 == Frequently Asked Questions ==
 
