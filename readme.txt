@@ -48,7 +48,7 @@ Leave off the affiliate information and it will link directly to your shop witho
 
 = Is this one of those 4th-click kind of plugins where we share in revenues? =
 
-If you are a CafePress shopkeeper, you can show your own products by using a unique tag on your designs. 
+No, all revenues and clicks belong to you.
 
 == Screenshots ==
 
