@@ -85,7 +85,7 @@
 }
 .cpgrid_backimg {
 	width:150px;
-	height:150px;
+	height:150px;	
 }
 .cpgrid_backimg img{
 	border: 0px #660000 dashed;
@@ -98,12 +98,12 @@
 	font-weight:bold;
 	border:2px solid;
 	padding:1px 1px 3px 1px;
-	border-color:#6cf #2af #2af #6cf;
-	background:#9df;
+	border-color: #eee #999 #666 #e3e3e3;
+	background:#fff;
 }
 
 .cpgrid_buylink a:hover {
-border-color: #2af #6cf #6cf #2af;
+border-color: #666 #e3e3e3 #eee #999; 
 }
 
 .cpgrid_viewall {
@@ -119,7 +119,6 @@ border-color: #2af #6cf #6cf #2af;
 	margin-bottom:20px;
 }
 
-
 .cpgrid_fluiditemblock {
 	text-align:center;
 	float:left; 
@@ -132,7 +131,6 @@ border-color: #2af #6cf #6cf #2af;
 	background:#ffffff;
 	border: 1px solid #ccc;
 	}
-
 
 .cpgrid_fluiditemblockover {
 	text-align:center;
@@ -148,6 +146,6 @@ border-color: #2af #6cf #6cf #2af;
 
 	}
 
-.cpgrid_fluiditemblockover img, .itemblock img {
+.cpgrid_fluiditemblockover img, .cpgrid_fluiditemblock img {
 	border:0px;
 }
