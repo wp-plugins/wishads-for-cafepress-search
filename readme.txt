@@ -4,14 +4,16 @@ Donate link: http://www.wishads.com
 Tags: plugin,post,page,cafepress,affiliate,shirts,pod,print-on-demand
 Requires at least: 2.7
 Tested up to: 2.7.1
-Stable tag: 1.0
+Stable tag: 1.1
 
-Accesses the CafePress API to display millions of products based on search terms and product types. PHP5 is required.
+Accesses the CafePress API via shortcodes to display millions of products based on search terms and product types. PHP5 is required.
 
 == Description ==
 
 Whether you want to display your own products as a shopkeeper using your unique tags or you want to sell other's 
 products for a commission, this plugin is for you.
+
+This release fixes directory issues in the original release 1.0.
 
 Features:
 

@@ -4,7 +4,7 @@ Plugin Name: Wishads for CafePress Search
 Plugin URI: http://www.wishads.com/wordpress-plugins/cafepress_grid/
 Description: A plugin that creates a display grid of products available from CafePress.com based on search terms and creates affiliate links to said products. 
 Author: Wishads.com
-Version: 1.0
+Version: 1.1
 Author URI: http://www.wishads.com/
 */ 
 
@@ -51,7 +51,7 @@ function wpCPGrid ($attr, $content) {
 
 		$cpgrid_permalink = get_permalink($post->ID);
 		// build the file name
-		$cpgrid_cachedir = WP_PLUGIN_DIR . "/cafepress_grid/cache/";
+		$cpgrid_cachedir = WP_PLUGIN_DIR . "/wishads-for-cafepress-search/cache/";
 		cpgrid_cleancache($cpgrid_cachedir);
 		$cpgrid_fileName = 	$cpgrid_cachedir . "$cpgrid_search" . "_" . $cpgrid_startPage . "_" . $cpgrid_prodTypes . "_" . $cpgrid_return  . ".xml";	
 	
@@ -230,7 +230,7 @@ $xmltowrite = "<?xml version=\"1.0\" standalone=\"yes\"?>
 					$cpgrid .= "<div class=\"cpgrid_thumbnailblock\">";
 					$cpgrid .= "<div class=\"cpgrid_design\"><div class=\"cpgrid_designtext\">Design</div>";
 					$cpgrid .= "<div class=\"cpgrid_designimg\" style=\"background-image: url('" . $thisDesignThumb . "'); background-repeat: no-repeat; background-position: center;\">";
-					$cpgrid .= "<a href=\"" . $thisDesignZoom . "\" title=\"$thisTitle design zoom\" class=\"thickbox\"><img src=\"" . WP_PLUGIN_URL ."/cafepress_grid/images/trans.gif\" /></a></div></div>\n";
+					$cpgrid .= "<a href=\"" . $thisDesignZoom . "\" title=\"$thisTitle design zoom\" class=\"thickbox\"><img src=\"" . WP_PLUGIN_URL ."/wishads-for-cafepress-search/images/trans.gif\" /></a></div></div>\n";
 					$cpgrid .= "<div class=\"cpgrid_front\"><div class=\"cpgrid_fronttext\">Front</div><div class=\"cpgrid_frontimg\">";
 					$cpgrid .= "<a href=\"" . $thisFrontZoom . "\" title=\"$thisTitle product front\" class=\"thickbox\"><img src=\"$thisFrontThumb\" /></a></div></div>\n";
 					if (in_array($mainResult->producttype,$cpgrid_doubleFront)) {
@@ -277,7 +277,7 @@ function cpgrid_add_css() {
 	echo "<script type=\"text/javascript\" src=\"/wp-includes/js/jquery/jquery.js\"></script>";
 	echo "<script type=\"text/javascript\" src=\"/wp-includes/js/thickbox/thickbox.js\"></script>";
 	echo "<link rel=\"stylesheet\" href=\"/wp-includes/js/thickbox/thickbox.css\" type=\"text/css\" media=\"screen\" />\n";
-	echo "<link rel=\"stylesheet\" href=\"" . WP_PLUGIN_URL ."/cafepress_grid/cpgrid.css\" type=\"text/css\" media=\"screen\" />\n";
+	echo "<link rel=\"stylesheet\" href=\"" . WP_PLUGIN_URL ."/wishads-for-cafepress-search/cpgrid.css\" type=\"text/css\" media=\"screen\" />\n";
 	
 }
 
@@ -290,7 +290,7 @@ function handleAdminMenu() {
 function cpgridwarning() {
 	echo "<div id='wpCPGrid_warning' class='updated fade-ff0000'><p><strong>"
 		.__('Wishads for Cafepress Search is almost ready.')."</strong> "
-		.sprintf(__('You must <a href="options-general.php?page=cafepress_grid/cafepress_grid.php">enter your CafePress API key and your Commission Junction PID</a> for it to work.'), "options-general.php?page=cafepress_grid/cafepress_grid.php")
+		.sprintf(__('You must <a href="options-general.php?page=wishads-for-cafepress-search/cafepress_grid.php">enter your CafePress API key and your Commission Junction PID</a> for it to work.'), "options-general.php?page=wishads-for-cafepress-search/cafepress_grid.php")
 		."</p></div>";
 }
 
@@ -331,7 +331,7 @@ function insertForm() {
 
 function adminHead () {
     if ($GLOBALS['editing']) {
-        wp_enqueue_script('wpCPGridAdmin', WP_PLUGIN_URL .'/cafepress_grid/js/cpgrid.js', array('jquery'), '1.0.0');
+        wp_enqueue_script('wpCPGridAdmin', WP_PLUGIN_URL .'/wishads-for-cafepress-search/js/cpgrid.js', array('jquery'), '1.0.0');
     }
 }
 
@@ -399,7 +399,7 @@ function wishads_cpgrid_plugin_options() {
 	?>
     
 	<div class="wrap">
-    <h3>For a complete explanation of the setup and use, see the <a href="<? echo WP_PLUGIN_URL; ?>/cafepress_grid/cafepress_grid_help.php" target="_blank">help file</a>.	</h3>
+    <h3>For a complete explanation of the setup and use, see the <a href="<? echo WP_PLUGIN_URL; ?>/wishads-for-cafepress-search/cafepress_grid_help.php" target="_blank">help file</a>.	</h3>
 
 	<form name="myform" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
     <input type="hidden" name="get_cpgrid_submit" value="Y" />
