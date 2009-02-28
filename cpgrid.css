@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+.cpgrid_itemblock {
+	margin-left:20px;
+	margin-bottom:20px;
+
+}
+.cpgrid_title {
+/*	float:left; */
+/*	margin-left:-15px; 
+	margin-right:1em; */
+	font-size:100%;
+	font-weight:bold;
+	margin-bottom:6px;
+}
+.cpgrid_shoplink {
+	font-size:120%;
+	font-weight:bold;
+}
+.cpgrid_designlink {
+	margin-bottom:12px;
+}
+.cpgrid_description {
+	font-style:italic;
+	font-weight:bold;
+	color:#999999;
+	margin-top:12px;
+}
+
+.cpgrid_designtext {
+	font-weight:bold;
+	text-align:center;
+}
+.cpgrid_backtext {
+	font-weight:bold;
+	text-align:center;
+}
+.cpgrid_fronttext {
+	font-weight:bold;
+	text-align:center;
+}
+.cpgrid_paging {
+	font-weight:bold;
+	margin-top:12px;
+	margin-bottom:12px;
+	text-align:center;
+}
+.cpgrid_thumbnailblock {
+	text-align:center;
+	clear:both;
+	margin-top:12px;
+	margin-bottom:12px;
+}
+.cpgrid_design {
+	float:left;
+	margin-right:0px;
+}
+.cpgrid_front {
+	float:left;
+	margin-right:0px;
+}
+
+.cpgrid_back {
+	float:left;
+	margin-right:0px;
+}
+
+.cpgrid_designimg {
+	width:150px;
+	height:150px;
+}
+
+.cpgrid_designimg img{
+	border: 0px #660000 dashed;
+}
+
+.cpgrid_frontimg {
+	width:150px;
+	height:150px;
+}
+
+.cpgrid_frontimg img{
+	border: 0px #660000 dashed;
+}
+.cpgrid_backimg {
+	width:150px;
+	height:150px;	
+}
+.cpgrid_backimg img{
+	border: 0px #660000 dashed;
+}
+.cpgrid_buylink a{
+	font-size:100%;
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+	border:2px solid;
+	padding:1px 1px 3px 1px;
+	border-color: #eee #999 #666 #e3e3e3;
+	background:#fff;
+}
+
+.cpgrid_buylink a:hover {
+border-color: #666 #e3e3e3 #eee #999; 
+}
+
+.cpgrid_viewall {
+	text-align:center;
+	margin-bottom:20px;
+	font-size:125%;
+	font-weight:bold;
+}
+.cpgrid_separator {
+	width:100%;
+	border: 1px #CCCCCC dashed;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.cpgrid_fluiditemblock {
+	text-align:center;
+	float:left; 
+	margin-left:0px;
+	margin-right:2px;
+	font-size:90%;
+	width:160px;
+	height:225px;
+	margin-bottom:10px;
+	background:#ffffff;
+	border: 1px solid #ccc;
+	}
+
+.cpgrid_fluiditemblockover {
+	text-align:center;
+	float:left; 
+	margin-left:0px;
+	margin-right:2px;
+	font-size:90%;
+	width:160px;
+	height:225px;
+	margin-bottom:10px;
+	background:#ffffff;
+	border:#333333 1px solid ;
+
+	}
+
+.cpgrid_fluiditemblockover img, .cpgrid_fluiditemblock img {
+	border:0px;
+}
