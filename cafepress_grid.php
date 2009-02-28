@@ -4,7 +4,7 @@ Plugin Name: Wishads for CafePress Search
 Plugin URI: http://www.wishads.com/wordpress-plugins/cafepress_grid/
 Description: A plugin that creates a display grid of products available from CafePress.com based on search terms and creates affiliate links to said products. 
 Author: Wishads.com
-Version: 1.1
+Version: 1.1.1
 Author URI: http://www.wishads.com/
 */ 
 
