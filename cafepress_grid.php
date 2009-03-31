@@ -4,7 +4,7 @@ Plugin Name: Wishads for CafePress Search
 Plugin URI: http://www.wishads.com/wordpress-plugins/cafepress_grid/
 Description: A plugin that creates a display grid of products available from CafePress.com based on search terms and creates affiliate links to said products. 
 Author: Wishads.com
-Version: 1.1.1
+Version: 1.1.2
 Author URI: http://www.wishads.com/
 */ 
 
@@ -59,7 +59,9 @@ function wpCPGrid ($attr, $content) {
 		if (file_exists ( $cpgrid_fileName)) { // check for existing cached file
 			$cpgrid_xml = $cpgrid_fileName;
 		} else { // make the api request and cache it
-			$cpApiRequest = "http://api.cafepress.com/product.advancedSearch.cp?v=3&appKey=$cpApiKey&query=$cpgrid_search&merchandiseIds=$cpgrid_prodTypes&startResults=" . ($cpgrid_startPage-1) . "&maxResults=$cpgrid_return&maxProductsPerDesign=1&sort=by_score_desc";	
+		if (empty($cpgrid_prodTypes) || $cpgrid_prodTypes == "")
+			$cpgrid_prodTypes = "-999";
+			$cpApiRequest = "http://open-api.cafepress.com/product.advancedSearch.cp?v=3&appKey=$cpApiKey&query=$cpgrid_search&merchandiseIds=$cpgrid_prodTypes&startResults=" . ($cpgrid_startPage-1) . "&maxResults=$cpgrid_return&maxProductsPerDesign=1&sort=by_score_desc";	
 			$cpgrid_getxml = simplexml_load_file($cpApiRequest) or die("feed not loading");
 		
 		

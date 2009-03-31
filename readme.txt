@@ -9,6 +9,7 @@ Stable tag: 1.1.1
 Accesses the CafePress API via shortcodes to display millions of products based on search terms and product types. PHP5 is required.
 
 == Description ==
+This is a required update to previous versions as CafePress is moving to a new api location and plugin versions prior to 1.1.2 will cease to function as of April 1, 2009.
 
 Whether you want to display your own products as a shopkeeper using your unique tags or you want to sell other's 
 products for a commission, this plugin is for you.
